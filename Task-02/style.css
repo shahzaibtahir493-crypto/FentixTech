@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: linear-gradient(#dcdcdc 0%, #ffffff 22%, #f4f4f4 100%);
+    color: #333;
+}
+
+.hero,
+.section {
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 8%;
+    gap: 60px;
+    text-align: center;
+}
+
+.text {
+    width: 760px;
+    max-width: 50%;
+}
+
+.logo {
+    width: 330px;
+    max-width: 100%;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: 8px;
+    white-space: nowrap;
+    margin: 0 0 12px;
+    color: #222;
+}
+
+h2 {
+    font-size: 34px;
+    letter-spacing: 12px;
+    margin: 0 0 28px;
+    color: #222;
+}
+
+p {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.28;
+    color: #777;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #555;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 90px;
+}
+
+.button img {
+    width: 250px;
+    height: auto;
+}
+
+.screens {
+    max-width: 45%;
+    height: auto;
+}
+
+.content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.reverse {
+    min-height: 760px;
+}
+
+.reverse .content {
+    transform: translateY(-45px);
+}
+
+.reverse .screens {
+    max-width: 43%;
+    transform: translateY(-65px);
+}
+
+.vectors {
+    width: 760px;
+    max-width: 120%;
+    height: auto;
+    opacity: 1;
+    display: block;
+    margin: 0 auto 70px;
+}
+
+footer {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+footer p {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+footer span {
+    color: #2d9cdb;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .section,
+    .section.reverse {
+        flex-direction: column;
+        min-height: auto;
+        padding: 50px 24px;
+        gap: 35px;
+    }
+
+    .text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .reverse .content,
+    .reverse .screens {
+        transform: none;
+    }
+
+    .screens,
+    .reverse .screens {
+        max-width: 90%;
+    }
+
+    .logo {
+        width: 260px;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        white-space: normal;
+        font-size: 18px;
+        letter-spacing: 5px;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
+    .hero p {
+        font-size: 22px;
+        line-height: 1.35;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .button {
+        margin-top: 35px;
+        gap: 16px;
+    }
+
+    .button img {
+        width: 130px;
+    }
+
+    .vectors {
+        width: 360px;
+        max-width: 90%;
+        opacity: 1;
+        margin-bottom: 35px;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    .footer-logo {
+        width: 70px;
+    }
+}
