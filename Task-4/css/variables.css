@@ -1,0 +1,31 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-secondary: #fafafa;
+  --color-border: #dbdbdb;
+  --color-text: #262626;
+  --color-text-secondary: #8e8e8e;
+  --color-text-muted: #c7c7c7;
+  --color-accent: #0095f6;
+  --color-notification: #ed4956;
+  --color-icon: #262626;
+
+  --gradient-post: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  --gradient-placeholder: linear-gradient(160deg, #fce4ec 0%, #f48fb1 35%, #ce93d8 70%, #9c27b0 100%);
+  --gradient-story-ring: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+
+  --phone-width: 320px;
+  --phone-height: 640px;
+  --phone-radius: 36px;
+  --phone-bezel: 10px;
+
+  --font-xs: 0.625rem;
+  --font-sm: 0.75rem;
+  --font-base: 0.8125rem;
+  --font-md: 0.875rem;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+}

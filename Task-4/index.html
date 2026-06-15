@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instagram Profile UI Clone — Profile, Home Feed, and Explore screens">
+  <title>Instagram Profile UI Clone</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/explore.css">
+</head>
+<body>
+
+  <main class="showcase">
+    <header class="showcase__header">
+      <h1>Instagram Profile UI Clone</h1>
+      <p>Profile &middot; Home Feed &middot; Explore</p>
+    </header>
+
+    <!-- ═══════════════════ SCREEN 1: PROFILE ═══════════════════ -->
+    <article class="phone" aria-label="Profile screen">
+      <div class="phone__screen">
+        <div class="phone__notch" aria-hidden="true"></div>
+
+        <div class="screen">
+          <!-- Status bar -->
+          <div class="status-bar" role="presentation">
+            <time class="status-bar__time">9:41</time>
+            <div class="status-bar__icons" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
+            </div>
+          </div>
+
+          <div class="screen__scroll">
+            <!-- Profile header -->
+            <header class="profile-header">
+              <div class="profile-header__username" aria-hidden="true"></div>
+              <button class="icon-btn profile-header__menu" aria-label="Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                <span class="notification-dot"></span>
+              </button>
+            </header>
+
+            <!-- Avatar + stats -->
+            <section class="profile-info" aria-label="Profile statistics">
+              <div class="profile-info__avatar-wrap">
+                <div class="profile-info__avatar" role="img" aria-label="Profile picture"></div>
+                <button class="profile-info__add-btn" aria-label="Add to story">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+              </div>
+              <div class="profile-info__stats">
+                <div class="stat"><div class="stat__value"></div><div class="stat__label"></div></div>
+                <div class="stat"><div class="stat__value"></div><div class="stat__label"></div></div>
+                <div class="stat"><div class="stat__value"></div><div class="stat__label"></div></div>
+              </div>
+            </section>
+
+            <!-- Bio -->
+            <section class="profile-bio" aria-label="Bio">
+              <div class="placeholder-line placeholder-line--medium placeholder-line--bold"></div>
+              <div class="placeholder-line placeholder-line--long"></div>
+              <div class="placeholder-line placeholder-line--short"></div>
+            </section>
+
+            <!-- Action buttons -->
+            <section class="profile-actions" aria-label="Profile actions">
+              <div class="profile-actions__primary"></div>
+              <div class="profile-actions__row">
+                <div class="profile-actions__secondary"></div>
+                <div class="profile-actions__secondary"></div>
+                <div class="profile-actions__secondary"></div>
+              </div>
+            </section>
+
+            <!-- Story highlights -->
+            <section class="highlights" aria-label="Story highlights">
+              <div class="highlight">
+                <div class="highlight__circle highlight__circle--new">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </div>
+                <div class="highlight__label"></div>
+              </div>
+              <div class="highlight"><div class="highlight__circle highlight__circle--filled"></div><div class="highlight__label"></div></div>
+              <div class="highlight"><div class="highlight__circle highlight__circle--filled"></div><div class="highlight__label"></div></div>
+              <div class="highlight"><div class="highlight__circle highlight__circle--filled"></div><div class="highlight__label"></div></div>
+              <div class="highlight"><div class="highlight__circle highlight__circle--filled"></div><div class="highlight__label"></div></div>
+            </section>
+
+            <!-- Content tabs -->
+            <nav class="content-tabs" aria-label="Content type">
+              <button class="content-tabs__tab content-tabs__tab--active" aria-label="Posts" aria-current="page">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              </button>
+              <button class="content-tabs__tab" aria-label="Tagged photos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" fill="none"/></svg>
+              </button>
+            </nav>
+
+            <!-- Post grid -->
+            <section class="profile-grid" aria-label="Posts">
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+              <div class="profile-grid__item"></div>
+            </section>
+          </div>
+
+          <!-- Bottom nav -->
+          <nav class="bottom-nav screen__fixed-bottom" aria-label="Main navigation">
+            <a class="bottom-nav__item" href="#" aria-label="Home">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Create">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Activity">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </a>
+            <a class="bottom-nav__item bottom-nav__item--active" href="#" aria-label="Profile" aria-current="page">
+              <div class="bottom-nav__avatar"></div>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <p class="phone__label">Profile</p>
+    </article>
+
+    <!-- ═══════════════════ SCREEN 2: HOME FEED ═══════════════════ -->
+    <article class="phone" aria-label="Home feed screen">
+      <div class="phone__screen">
+        <div class="phone__notch" aria-hidden="true"></div>
+
+        <div class="screen">
+          <div class="status-bar" role="presentation">
+            <time class="status-bar__time">9:41</time>
+            <div class="status-bar__icons" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
+            </div>
+          </div>
+
+          <header class="feed-header">
+            <button class="feed-header__camera icon-btn" aria-label="Camera">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </button>
+            <svg class="feed-header__logo" viewBox="0 0 100 28" aria-label="Instagram">
+              <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#262626" letter-spacing="-0.5">Instagram</text>
+            </svg>
+            <div class="feed-header__actions">
+              <button class="icon-btn" aria-label="IGTV">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="12 7 12 2 8 2"/><polyline points="12 7 12 2 16 2"/></svg>
+              </button>
+              <button class="icon-btn" aria-label="Direct messages">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span class="notification-dot"></span>
+              </button>
+            </div>
+          </header>
+
+          <div class="screen__scroll">
+            <!-- Stories -->
+            <section class="stories" aria-label="Stories">
+              <div class="story">
+                <div class="story__avatar story__avatar--own">
+                  <div class="story-ring__inner"></div>
+                  <span class="story__add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+                </div>
+                <div class="story__label"></div>
+              </div>
+              <div class="story">
+                <div class="story__avatar story-ring"><div class="story-ring__inner story-ring__inner--gradient"></div></div>
+                <div class="story__label"></div>
+              </div>
+              <div class="story">
+                <div class="story__avatar story-ring"><div class="story-ring__inner story-ring__inner--gradient"></div></div>
+                <div class="story__label"></div>
+              </div>
+              <div class="story">
+                <div class="story__avatar story-ring"><div class="story-ring__inner story-ring__inner--gradient"></div></div>
+                <div class="story__label"></div>
+              </div>
+              <div class="story">
+                <div class="story__avatar story-ring"><div class="story-ring__inner story-ring__inner--gradient"></div></div>
+                <div class="story__label"></div>
+              </div>
+            </section>
+
+            <!-- Feed post -->
+            <article class="feed-post" aria-label="Post">
+              <header class="post-header">
+                <div class="post-header__avatar"></div>
+                <div class="post-header__username"></div>
+                <button class="post-header__menu icon-btn" aria-label="More options">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+                </button>
+              </header>
+
+              <div class="post-image" role="img" aria-label="Post image"></div>
+
+              <div class="post-actions">
+                <div class="post-actions__left">
+                  <button aria-label="Like"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  <button aria-label="Comment"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+                  <button aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+                </div>
+                <button class="post-actions__right" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button>
+              </div>
+
+              <div class="post-caption">
+                <div class="placeholder-line placeholder-line--medium placeholder-line--bold"></div>
+                <div class="placeholder-line placeholder-line--long"></div>
+                <div class="placeholder-line placeholder-line--short"></div>
+              </div>
+
+              <section class="post-comments" aria-label="Comments">
+                <div class="comment">
+                  <div class="comment__avatar"></div>
+                  <div class="comment__text">
+                    <div class="placeholder-line placeholder-line--long"></div>
+                    <div class="placeholder-line placeholder-line--medium"></div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="comment__avatar"></div>
+                  <div class="comment__text">
+                    <div class="placeholder-line placeholder-line--long"></div>
+                  </div>
+                </div>
+              </section>
+            </article>
+          </div>
+
+          <nav class="bottom-nav screen__fixed-bottom" aria-label="Main navigation">
+            <a class="bottom-nav__item bottom-nav__item--active" href="#" aria-label="Home" aria-current="page">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Create">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Activity">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Profile">
+              <div class="bottom-nav__avatar"></div>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <p class="phone__label">Home Feed</p>
+    </article>
+
+    <!-- ═══════════════════ SCREEN 3: EXPLORE ═══════════════════ -->
+    <article class="phone" aria-label="Explore screen">
+      <div class="phone__screen">
+        <div class="phone__notch" aria-hidden="true"></div>
+
+        <div class="screen">
+          <div class="status-bar" role="presentation">
+            <time class="status-bar__time">9:41</time>
+            <div class="status-bar__icons" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
+            </div>
+          </div>
+
+          <div class="screen__scroll">
+            <!-- Search bar -->
+            <section class="explore-search" aria-label="Search">
+              <div class="explore-search__bar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <div class="explore-search__placeholder"></div>
+              </div>
+              <button class="icon-btn explore-search__scan" aria-label="Scan QR code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="3" height="3"/><line x1="21" y1="14" x2="21" y2="14.01"/><line x1="21" y1="21" x2="21" y2="21.01"/><line x1="14" y1="21" x2="14" y2="21.01"/></svg>
+              </button>
+            </section>
+
+            <!-- Category pills -->
+            <section class="categories" aria-label="Categories">
+              <div class="pill"><span class="pill__icon"></span><span class="pill__line"></span></div>
+              <div class="pill"><span class="pill__icon"></span><span class="pill__line"></span></div>
+              <div class="pill"><span class="pill__icon"></span><span class="pill__line"></span></div>
+              <div class="pill"><span class="pill__icon"></span><span class="pill__line"></span></div>
+              <div class="pill"><span class="pill__icon"></span><span class="pill__line"></span></div>
+            </section>
+
+            <!-- Explore grid (masonry via CSS Grid) -->
+            <section class="explore-grid" aria-label="Explore content">
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item explore-grid__item--tall">
+                <span class="explore-grid__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="6" y="6" width="12" height="12" rx="1" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+              </div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item explore-grid__item--wide">
+                <span class="explore-grid__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </span>
+              </div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item explore-grid__item--tall"></div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item explore-grid__item--wide"></div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item"></div>
+              <div class="explore-grid__item"></div>
+            </section>
+          </div>
+
+          <nav class="bottom-nav screen__fixed-bottom" aria-label="Main navigation">
+            <a class="bottom-nav__item" href="#" aria-label="Home">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </a>
+            <a class="bottom-nav__item bottom-nav__item--active" href="#" aria-label="Search" aria-current="page">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Create">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Activity">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </a>
+            <a class="bottom-nav__item" href="#" aria-label="Profile">
+              <div class="bottom-nav__avatar"></div>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <p class="phone__label">Explore</p>
+    </article>
+
+  </main>
+
+</body>
+</html>

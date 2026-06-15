@@ -1,0 +1,210 @@
+/* ── Profile screen ── */
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+.profile-header__username {
+  width: 100px;
+  height: 10px;
+  border-radius: 4px;
+  background: var(--color-text);
+}
+
+.profile-header__menu {
+  position: relative;
+}
+
+/* ── Profile info (avatar + stats) ── */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  padding: 0 var(--spacing-lg) var(--spacing-md);
+}
+
+.profile-info__avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profile-info__avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: var(--gradient-placeholder);
+}
+
+.profile-info__add-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-bg);
+  color: #fff;
+}
+
+.profile-info__add-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.profile-info__stats {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat__value {
+  width: 28px;
+  height: 10px;
+  border-radius: 4px;
+  background: var(--color-text);
+}
+
+.stat__label {
+  width: 48px;
+  height: 7px;
+  border-radius: 3px;
+  background: var(--color-text-muted);
+}
+
+/* ── Bio ── */
+.profile-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 var(--spacing-lg) var(--spacing-md);
+}
+
+/* ── Action buttons ── */
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: 0 var(--spacing-lg) var(--spacing-md);
+}
+
+.profile-actions__primary {
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.profile-actions__row {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.profile-actions__secondary {
+  flex: 1;
+  height: 30px;
+  border-radius: 6px;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+}
+
+/* ── Highlights ── */
+.highlights {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-lg) var(--spacing-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.highlights::-webkit-scrollbar {
+  display: none;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.highlight__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.highlight__circle--new svg {
+  width: 20px;
+  height: 20px;
+}
+
+.highlight__circle--filled {
+  background: var(--gradient-placeholder);
+  border: none;
+}
+
+.highlight__label {
+  width: 40px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-text-muted);
+}
+
+/* ── Content tabs ── */
+.content-tabs {
+  display: flex;
+  border-top: 1px solid var(--color-border);
+}
+
+.content-tabs__tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid transparent;
+}
+
+.content-tabs__tab--active {
+  color: var(--color-text);
+  border-bottom-color: var(--color-text);
+}
+
+.content-tabs__tab svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ── Profile post grid (CSS Grid) ── */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.profile-grid__item {
+  aspect-ratio: 1;
+  background: var(--gradient-placeholder);
+}

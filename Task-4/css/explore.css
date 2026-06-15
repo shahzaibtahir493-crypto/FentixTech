@@ -1,0 +1,91 @@
+/* ── Explore / Search screen ── */
+
+.explore-search {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.explore-search__bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  height: 36px;
+  padding: 0 var(--spacing-md);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.explore-search__bar svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+}
+
+.explore-search__placeholder {
+  flex: 1;
+  height: 7px;
+  border-radius: 3px;
+  background: var(--color-text-muted);
+  max-width: 120px;
+}
+
+.explore-search__scan svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ── Category pills row ── */
+.categories {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Explore masonry grid (CSS Grid) ── */
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, 1fr);
+  gap: 2px;
+  padding-bottom: var(--spacing-sm);
+}
+
+.explore-grid__item {
+  position: relative;
+  background: var(--gradient-placeholder);
+  overflow: hidden;
+  min-height: 100px;
+}
+
+.explore-grid__item--tall {
+  grid-row: span 2;
+  min-height: 202px;
+}
+
+.explore-grid__item--wide {
+  grid-column: span 2;
+}
+
+.explore-grid__badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  color: #fff;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.explore-grid__badge svg {
+  width: 16px;
+  height: 16px;
+}
