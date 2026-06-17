@@ -9,6 +9,9 @@
 </head>
 <body>
 
+  <!-- ========== SNOWFLAKES ========== -->
+  <div class="snowflakes" aria-hidden="true" id="snowflakes"></div>
+
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
@@ -17,10 +20,10 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#home"      class="nav-link active"><span class="flake">❄</span>Home</a></li>
-        <li><a href="#gallery"   class="nav-link"><span class="flake">❄</span>Gallery</a></li>
-        <li><a href="#about"     class="nav-link"><span class="flake">❄</span>About</a></li>
-        <li><a href="#contact"   class="nav-link"><span class="flake">❄</span>Contact</a></li>
+        <li><a href="#home"    class="nav-link active"><span class="flake">❄</span>Home</a></li>
+        <li><a href="#gallery" class="nav-link"><span class="flake">❄</span>Gallery</a></li>
+        <li><a href="#about"   class="nav-link"><span class="flake">❄</span>About</a></li>
+        <li><a href="#contact" class="nav-link"><span class="flake">❄</span>Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -28,21 +31,42 @@
   <!-- ========== HERO ========== -->
   <section class="hero" id="home">
     <div class="hero-slides">
-      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80')"></div>
-      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1548777123-e216912df7d8?w=1600&q=80')"></div>
-      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=1600&q=80')"></div>
+      <div class="hero-slide active"
+           style="background-image:url('https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80')">
+      </div>
+      <div class="hero-slide"
+           style="background-image:url('https://images.unsplash.com/photo-1548777123-e216912df7d8?w=1600&q=80')">
+      </div>
+      <div class="hero-slide"
+           style="background-image:url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=1600&q=80')">
+      </div>
     </div>
     <div class="hero-overlay"></div>
+
     <div class="hero-content">
       <p class="hero-sub">Welcome to</p>
       <h1 class="hero-title">Winter Gallery</h1>
-      <p class="hero-desc">A curated collection of moments frozen in time — landscapes, celebrations, and the quiet beauty of winter.</p>
-      <a href="#gallery" class="btn-hero">View Gallery</a>
+      <div class="hero-line"></div>
+      <p class="hero-desc">
+        A curated collection of moments frozen in time —<br>
+        landscapes, celebrations, and the quiet beauty of winter.
+      </p>
+      <div class="hero-btns">
+        <a href="#gallery" class="btn-hero">View Gallery</a>
+        <a href="#about"   class="btn-hero-outline">About Me</a>
+      </div>
     </div>
+
+    <!-- slide dots -->
     <div class="hero-dots">
       <span class="dot active" data-slide="0"></span>
-      <span class="dot" data-slide="1"></span>
-      <span class="dot" data-slide="2"></span>
+      <span class="dot"        data-slide="1"></span>
+      <span class="dot"        data-slide="2"></span>
+    </div>
+
+    <!-- scroll hint -->
+    <div class="scroll-hint">
+      <span></span>
     </div>
   </section>
 
@@ -53,6 +77,10 @@
         <p class="section-sub">My Work</p>
         <h2 class="section-title">Photo Gallery</h2>
         <div class="divider"><span>❄</span></div>
+        <p class="section-desc">
+          Browse through handpicked photographs capturing the magic, warmth,<br>
+          and serenity of the winter season.
+        </p>
       </div>
 
       <!-- Filter Buttons -->
@@ -64,102 +92,141 @@
         <button class="filter-btn" data-filter="family">Family</button>
       </div>
 
-      <!-- Gallery Grid -->
+      <!-- Masonry Gallery Grid -->
       <div class="gallery-grid" id="galleryGrid">
 
         <div class="gallery-item" data-category="landscapes">
-          <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=600&q=80" alt="Winter Landscape"/>
+          <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=600&q=80" alt="Winter Landscape" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
+            <span class="gallery-zoom">&#128269;</span>
             <p>Winter Landscape</p>
+            <span class="gallery-cat">Landscapes</span>
           </div>
         </div>
 
         <div class="gallery-item tall" data-category="landscapes">
-          <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?w=600&q=80" alt="Snowy Forest"/>
+          <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?w=600&q=80" alt="Snowy Forest" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
+            <span class="gallery-zoom">&#128269;</span>
             <p>Snowy Forest</p>
+            <span class="gallery-cat">Landscapes</span>
           </div>
         </div>
 
         <div class="gallery-item" data-category="decorations">
-          <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=600&q=80" alt="Christmas Decor"/>
+          <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=600&q=80" alt="Christmas Decor" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
+            <span class="gallery-zoom">&#128269;</span>
             <p>Christmas Decor</p>
+            <span class="gallery-cat">Decorations</span>
           </div>
         </div>
 
         <div class="gallery-item" data-category="food">
-          <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600&q=80" alt="Winter Food"/>
+          <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600&q=80" alt="Winter Food" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
+            <span class="gallery-zoom">&#128269;</span>
             <p>Winter Food</p>
-          </div>
-        </div>
-
-        <div class="gallery-item wide" data-category="family">
-          <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=600&q=80" alt="Family Moments"/>
-          <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
-            <p>Family Moments</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="landscapes">
-          <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80" alt="Frozen Lake"/>
-          <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
-            <p>Frozen Lake</p>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="decorations">
-          <img src="https://images.unsplash.com/photo-1543332164-6e82f355badc?w=600&q=80" alt="Holiday Lights"/>
-          <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
-            <p>Holiday Lights</p>
-          </div>
-        </div>
-
-        <div class="gallery-item tall" data-category="food">
-          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=600&q=80" alt="Hot Cocoa"/>
-          <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
-            <p>Hot Cocoa</p>
+            <span class="gallery-cat">Food</span>
           </div>
         </div>
 
         <div class="gallery-item" data-category="family">
-          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191011?w=600&q=80" alt="Family Walk"/>
+          <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=600&q=80" alt="Family Moments" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
-            <p>Family Walk</p>
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Family Moments</p>
+            <span class="gallery-cat">Family</span>
           </div>
         </div>
 
-        <div class="gallery-item" data-category="landscapes">
-          <img src="https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=600&q=80" alt="Mountain Snow"/>
+        <div class="gallery-item tall" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80" alt="Frozen Lake" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
-            <p>Mountain Snow</p>
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Frozen Lake</p>
+            <span class="gallery-cat">Landscapes</span>
           </div>
         </div>
 
         <div class="gallery-item" data-category="decorations">
-          <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&q=80" alt="Ornaments"/>
+          <img src="https://images.unsplash.com/photo-1543332164-6e82f355badc?w=600&q=80" alt="Holiday Lights" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
-            <p>Ornaments</p>
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Holiday Lights</p>
+            <span class="gallery-cat">Decorations</span>
           </div>
         </div>
 
-        <div class="gallery-item wide" data-category="family">
-          <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&q=80" alt="Winter Joy"/>
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=600&q=80" alt="Hot Cocoa" loading="lazy"/>
           <div class="gallery-overlay">
-            <span class="gallery-icon">🔍</span>
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Hot Cocoa</p>
+            <span class="gallery-cat">Food</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="family">
+          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191011?w=600&q=80" alt="Family Walk" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Family Walk</p>
+            <span class="gallery-cat">Family</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=600&q=80" alt="Mountain Snow" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Mountain Snow</p>
+            <span class="gallery-cat">Landscapes</span>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="decorations">
+          <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&q=80" alt="Ornaments" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Ornaments</p>
+            <span class="gallery-cat">Decorations</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="family">
+          <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&q=80" alt="Winter Joy" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom">&#128269;</span>
             <p>Winter Joy</p>
+            <span class="gallery-cat">Family</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80" alt="Winter Baking" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Winter Baking</p>
+            <span class="gallery-cat">Food</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1467377791767-c929b5dc9a23?w=600&q=80" alt="Icy Path" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Icy Path</p>
+            <span class="gallery-cat">Landscapes</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorations">
+          <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&q=80" alt="Christmas Tree" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom">&#128269;</span>
+            <p>Christmas Tree</p>
+            <span class="gallery-cat">Decorations</span>
           </div>
         </div>
 
@@ -168,13 +235,16 @@
   </section>
 
   <!-- ========== LIGHTBOX ========== -->
-  <div class="lightbox" id="lightbox">
-    <button class="lb-close" id="lbClose">✕</button>
-    <button class="lb-prev" id="lbPrev">&#10094;</button>
-    <button class="lb-next" id="lbNext">&#10095;</button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lb-close" id="lbClose" aria-label="Close">&#10005;</button>
+    <button class="lb-prev"  id="lbPrev"  aria-label="Previous">&#10094;</button>
+    <button class="lb-next"  id="lbNext"  aria-label="Next">&#10095;</button>
     <div class="lb-img-wrap">
       <img src="" alt="" id="lbImg"/>
-      <p class="lb-caption" id="lbCaption"></p>
+      <div class="lb-info">
+        <p class="lb-caption" id="lbCaption"></p>
+        <span class="lb-counter" id="lbCounter"></span>
+      </div>
     </div>
   </div>
 
@@ -182,27 +252,63 @@
   <section class="about-section" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80" alt="Photographer"/>
+
+        <!-- Image Column -->
+        <div class="about-image-wrap">
+          <div class="about-image">
+            <img src="about.jpg"
+                 alt="Photographer Portrait"/>
+          </div>
           <div class="about-img-decor"></div>
+          <div class="about-exp-badge">
+            <span class="badge-num">12</span>
+            <span class="badge-txt">Years of<br>Experience</span>
+          </div>
         </div>
+
+        <!-- Text Column -->
         <div class="about-content">
           <p class="section-sub">About Me</p>
           <h2 class="section-title">Winter Photographer</h2>
           <div class="divider left"><span>❄</span></div>
+
           <p class="about-text">
-            I am a passionate photographer specializing in winter landscapes and seasonal moments. 
-            My journey began over a decade ago, wandering through snow-covered forests with nothing 
+            I am Shahzaib Tahir passionate photographer specializing in winter landscapes and seasonal moments.
+            My journey began over a decade ago, wandering through snow-covered forests with nothing
             but a camera and a love for the quiet beauty of cold seasons.
           </p>
           <p class="about-text">
-            Every photograph I take is a story — a fleeting moment crystallized forever. 
-            From icy mountain peaks to warm family celebrations, I capture the full spectrum 
+            Every photograph I take is a story — a fleeting moment crystallized forever.
+            From icy mountain peaks to warm family celebrations, I capture the full spectrum
             of winter's magic.
           </p>
+
+          <!-- Skills -->
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Landscape Photography</span><span>95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Portrait Photography</span><span>88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Photo Editing</span><span>92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+          </div>
+
+          <!-- Stats -->
           <div class="stats-grid">
             <div class="stat-box">
-              <h3>12+</h3>
+              <h3>12<span>+</span></h3>
               <p>Years Experience</p>
             </div>
             <div class="stat-box">
@@ -218,19 +324,54 @@
               <p>Awards Won</p>
             </div>
           </div>
-          <a href="#contact" class="btn-primary">Get In Touch</a>
+
+          <a href="#contact" class="btn-primary">Get In Touch ❄</a>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- ========== QUOTE BANNER ========== -->
   <section class="quote-section">
+    <div class="quote-bg"></div>
     <div class="container">
-      <blockquote>
-        "In every walk with nature, one receives far more than he seeks."
-        <cite>— John Muir</cite>
-      </blockquote>
+      <div class="quote-inner">
+        <span class="quote-mark">&ldquo;</span>
+        <blockquote>
+          In every walk with nature, one receives far more than he seeks.
+          <cite>— John Muir</cite>
+        </blockquote>
+        <span class="quote-mark right">&rdquo;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES STRIP ========== -->
+  <section class="services-section">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-item">
+          <span class="service-icon">📷</span>
+          <h4>Portrait Sessions</h4>
+          <p>Professional portrait photography in stunning winter settings.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-icon">🏔</span>
+          <h4>Landscape Shoots</h4>
+          <p>Breathtaking landscape images capturing nature at its finest.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-icon">🎄</span>
+          <h4>Event Coverage</h4>
+          <p>Complete coverage of your winter celebrations and events.</p>
+        </div>
+        <div class="service-item">
+          <span class="service-icon">🖼</span>
+          <h4>Fine Art Prints</h4>
+          <p>Museum-quality prints delivered to your door worldwide.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -241,65 +382,91 @@
         <p class="section-sub">Get In Touch</p>
         <h2 class="section-title">Contact Me</h2>
         <div class="divider"><span>❄</span></div>
+        <p class="section-desc">Have a project or session in mind? I'd love to hear from you.</p>
       </div>
 
       <div class="contact-grid">
+
+        <!-- Info -->
         <div class="contact-info">
-          <h3>Let's Talk</h3>
-          <p>Have a project in mind? I'd love to hear from you. Send me a message and I'll get back to you as soon as possible.</p>
+          <h3>Let's Create Together</h3>
+          <p>Whether you're looking for a private portrait session, event coverage, or a fine art print — reach out and let's make something beautiful.</p>
 
           <div class="contact-item">
-            <span class="contact-icon">📍</span>
+            <div class="contact-icon-wrap">📍</div>
             <div>
               <strong>Location</strong>
               <p>123 Winter Street, Snow City, WI 54321</p>
             </div>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">📧</span>
+            <div class="contact-icon-wrap">📧</div>
             <div>
               <strong>Email</strong>
               <p><a href="mailto:hello@wintergallery.com">hello@wintergallery.com</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">📞</span>
+            <div class="contact-icon-wrap">📞</div>
             <div>
               <strong>Phone</strong>
               <p><a href="tel:+11234567890">+1 (123) 456-7890</a></p>
             </div>
           </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">🕐</div>
+            <div>
+              <strong>Working Hours</strong>
+              <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+            </div>
+          </div>
 
           <div class="social-links">
-            <a href="#" class="social-link">Instagram</a>
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Pinterest</a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              Pinterest
+            </a>
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
+        <!-- Form -->
+        <form class="contact-form" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required/>
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="John Doe" required/>
             </div>
             <div class="form-group">
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required/>
+              <label for="femail">Your Email</label>
+              <input type="email" id="femail" name="email" placeholder="john@example.com" required/>
             </div>
           </div>
           <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Photo Session Inquiry"/>
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="Photo Session Inquiry"/>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5"
+                      placeholder="Tell me about your project..." required></textarea>
           </div>
-          <button type="submit" class="btn-primary">Send Message ❄</button>
-          <p class="form-success" id="formSuccess">Thank you! Your message has been sent.</p>
+          <button type="submit" class="btn-primary btn-submit">
+            Send Message <span>❄</span>
+          </button>
+          <p class="form-success" id="formSuccess">
+            ✔ Thank you! Your message has been sent. I'll get back to you soon.
+          </p>
         </form>
-      </div>
+
+      </div><!-- end contact-grid -->
     </div>
   </section>
 
@@ -307,10 +474,17 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
+
         <div class="footer-brand">
           <h3>❄ Winter Gallery</h3>
-          <p>Capturing the quiet beauty of winter, one frame at a time.</p>
+          <p>Capturing the quiet beauty of winter, one frame at a time. Based in Snow City, available worldwide.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Pinterest">Pt</a>
+          </div>
         </div>
+
         <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
@@ -320,6 +494,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
+
         <div class="footer-categories">
           <h4>Categories</h4>
           <ul>
@@ -329,13 +504,27 @@
             <li><a href="#">Family</a></li>
           </ul>
         </div>
-      </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 123 Winter Street, Snow City</li>
+            <li>📧 <a href="mailto:hello@wintergallery.com">hello@wintergallery.com</a></li>
+            <li>📞 <a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+          </ul>
+        </div>
+
+      </div><!-- end footer-grid -->
+
       <div class="footer-bottom">
-        <p>© 2025 Winter Gallery. Designed with ❄ and love.</p>
-        <p>Template inspired by <a href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+        <p>© 2025 Winter Gallery. Designed with ❄ and passion.</p>
+        <p>Template inspired by <a href="https://www.tooplate.com" target="_blank" rel="noopener">Tooplate</a></p>
       </div>
     </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">&#8679;</button>
 
   <script src="script.js"></script>
 </body>
