@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Winter Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">❄ Winter Gallery</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"      class="nav-link active"><span class="flake">❄</span>Home</a></li>
+        <li><a href="#gallery"   class="nav-link"><span class="flake">❄</span>Gallery</a></li>
+        <li><a href="#about"     class="nav-link"><span class="flake">❄</span>About</a></li>
+        <li><a href="#contact"   class="nav-link"><span class="flake">❄</span>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1548777123-e216912df7d8?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">Welcome to</p>
+      <h1 class="hero-title">Winter Gallery</h1>
+      <p class="hero-desc">A curated collection of moments frozen in time — landscapes, celebrations, and the quiet beauty of winter.</p>
+      <a href="#gallery" class="btn-hero">View Gallery</a>
+    </div>
+    <div class="hero-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-sub">My Work</p>
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="divider"><span>❄</span></div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+        <button class="filter-btn" data-filter="decorations">Decorations</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="family">Family</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=600&q=80" alt="Winter Landscape"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Winter Landscape</p>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?w=600&q=80" alt="Snowy Forest"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Snowy Forest</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorations">
+          <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=600&q=80" alt="Christmas Decor"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Christmas Decor</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600&q=80" alt="Winter Food"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Winter Food</p>
+          </div>
+        </div>
+
+        <div class="gallery-item wide" data-category="family">
+          <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=600&q=80" alt="Family Moments"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Family Moments</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80" alt="Frozen Lake"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Frozen Lake</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorations">
+          <img src="https://images.unsplash.com/photo-1543332164-6e82f355badc?w=600&q=80" alt="Holiday Lights"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Holiday Lights</p>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="food">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=600&q=80" alt="Hot Cocoa"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Hot Cocoa</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="family">
+          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191011?w=600&q=80" alt="Family Walk"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Family Walk</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=600&q=80" alt="Mountain Snow"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Mountain Snow</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorations">
+          <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&q=80" alt="Ornaments"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Ornaments</p>
+          </div>
+        </div>
+
+        <div class="gallery-item wide" data-category="family">
+          <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&q=80" alt="Winter Joy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <p>Winter Joy</p>
+          </div>
+        </div>
+
+      </div><!-- end gallery-grid -->
+    </div>
+  </section>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">✕</button>
+    <button class="lb-prev" id="lbPrev">&#10094;</button>
+    <button class="lb-next" id="lbNext">&#10095;</button>
+    <div class="lb-img-wrap">
+      <img src="" alt="" id="lbImg"/>
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80" alt="Photographer"/>
+          <div class="about-img-decor"></div>
+        </div>
+        <div class="about-content">
+          <p class="section-sub">About Me</p>
+          <h2 class="section-title">Winter Photographer</h2>
+          <div class="divider left"><span>❄</span></div>
+          <p class="about-text">
+            I am a passionate photographer specializing in winter landscapes and seasonal moments. 
+            My journey began over a decade ago, wandering through snow-covered forests with nothing 
+            but a camera and a love for the quiet beauty of cold seasons.
+          </p>
+          <p class="about-text">
+            Every photograph I take is a story — a fleeting moment crystallized forever. 
+            From icy mountain peaks to warm family celebrations, I capture the full spectrum 
+            of winter's magic.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <h3>12+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-box">
+              <h3>840</h3>
+              <p>Photos Taken</p>
+            </div>
+            <div class="stat-box">
+              <h3>320</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-box">
+              <h3>45</h3>
+              <p>Awards Won</p>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUOTE BANNER ========== -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>
+        "In every walk with nature, one receives far more than he seeks."
+        <cite>— John Muir</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-sub">Get In Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="divider"><span>❄</span></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's Talk</h3>
+          <p>Have a project in mind? I'd love to hear from you. Send me a message and I'll get back to you as soon as possible.</p>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <p>123 Winter Street, Snow City, WI 54321</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:hello@wintergallery.com">hello@wintergallery.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Pinterest</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Photo Session Inquiry"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message ❄</button>
+          <p class="form-success" id="formSuccess">Thank you! Your message has been sent.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>❄ Winter Gallery</h3>
+          <p>Capturing the quiet beauty of winter, one frame at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-categories">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Landscapes</a></li>
+            <li><a href="#">Decorations</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Family</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Winter Gallery. Designed with ❄ and love.</p>
+        <p>Template inspired by <a href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
