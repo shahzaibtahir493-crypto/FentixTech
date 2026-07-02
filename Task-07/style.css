@@ -1,0 +1,68 @@
+/* ============================================================
+   WHITEPACE — Minimal Custom CSS
+   Only things Bootstrap cannot handle:
+   • Font family
+   • Brand-specific colors not in Bootstrap palette
+   • Nav link hover opacity
+   • Smooth scroll
+   • Footer/nav link hover transitions
+   ============================================================ */
+
+/* 1. Font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* 2. Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3. Nav link hover */
+.nav-link:hover {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* 4. Footer & misc link hover */
+footer a:hover,
+section a.text-decoration-none:hover {
+  color: #FFE482 !important;
+  transition: color 0.2s;
+}
+
+/* 5. Pricing toggle — override Bootstrap switch color */
+.form-check-input:checked {
+  background-color: #0A2463 !important;
+  border-color: #0A2463 !important;
+}
+
+/* 6. Card hover lift (subtle UX) */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(10, 36, 99, 0.12) !important;
+}
+
+/* 7. Navbar toggler — remove default outline */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* 8. Responsive section padding on mobile */
+@media (max-width: 768px) {
+  section[style*="padding:96px"] {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+  section[style*="padding:100px"] {
+    padding-top: 72px !important;
+    padding-bottom: 60px !important;
+  }
+  section[style*="padding:80px"] {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+}

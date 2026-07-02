@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whitepace – Get More Done</title>
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ======================================================
+     NAVBAR
+====================================================== -->
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color:#0A2463; padding:14px 0;">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2 text-white fw-bold fs-5 text-decoration-none" href="#">
+      <!-- SVG logo mark (W arrow shape) -->
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="34" height="34" rx="8" fill="#4F90CF"/>
+        <path d="M8 12L13 22L17 15L21 22L26 12" stroke="white" stroke-width="2.6"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      whitepace
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler border-0 shadow-none" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-1 text-white"></i>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link text-white-75 fw-medium px-3" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link text-white-75 fw-medium px-3" href="#solutions">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link text-white-75 fw-medium px-3" href="#resources">Resources</a></li>
+        <li class="nav-item"><a class="nav-link text-white-75 fw-medium px-3" href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+        <a href="#" class="text-white text-decoration-none fw-medium small">Login</a>
+        <a href="#" class="btn btn-warning fw-semibold px-4 py-2 text-dark rounded-3">Try Whitepace free</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ======================================================
+     HERO — "Get More Done with whitepace"
+====================================================== -->
+<section id="home" style="background-color:#0A2463; padding:100px 0 80px;">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold text-white lh-sm mb-4">
+          Get More Done with<br>
+          <span class="text-warning">whitepace</span>
+        </h1>
+        <p class="fs-6 mb-5 lh-lg" style="color:rgba(255,255,255,0.72); max-width:460px;">
+          Project management software that enables your teams to collaborate,
+          plan, analyze and manage everyday tasks.
+        </p>
+        <a href="#" class="btn btn-warning fw-bold px-5 py-3 fs-6 rounded-3 text-dark">
+          Try Whitepace free
+        </a>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="assets/hero-illustration.png"
+             onerror="this.src='https://placehold.co/580x420/1B2D6B/4F90CF?text=Hero+Illustration'"
+             alt="Whitepace dashboard"
+             class="img-fluid rounded-4" style="filter:drop-shadow(0 20px 40px rgba(0,0,0,0.3));" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 2 — Project Management
+     White bg | text left | illustration right
+====================================================== -->
+<section id="features" style="background:#fff; padding:96px 0;">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6 order-lg-1">
+        <p class="fw-semibold mb-2" style="color:#4F90CF; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">Project Management</p>
+        <h2 class="fw-bold mb-4" style="font-size:2.2rem; color:#1a1a2e; line-height:1.25;">
+          Work together,<br>achieve more
+        </h2>
+        <p class="mb-4 lh-lg" style="color:#4A5568; font-size:0.95rem;">
+          With whitepace, share your perfect workspace with your team.
+          Collaborate and get your ideas across using docs, whiteboards,
+          or webpages that are as flexible as you need them to be.
+        </p>
+        <a href="#" class="btn fw-semibold px-5 py-3 rounded-3 text-white"
+           style="background:#0A2463;">Get Started</a>
+      </div>
+
+      <div class="col-lg-6 order-lg-2 text-center position-relative">
+        <!-- Floating coloured dots (matching Figma) -->
+        <span class="position-absolute rounded-circle" style="width:16px;height:16px;background:#FF6B6B;top:10%;left:6%;"></span>
+        <span class="position-absolute rounded-circle" style="width:16px;height:16px;background:#FFE482;top:28%;left:15%;"></span>
+        <span class="position-absolute rounded-circle" style="width:14px;height:14px;background:#51CF66;top:52%;left:4%;"></span>
+        <span class="position-absolute rounded-circle" style="width:16px;height:16px;background:#4F90CF;top:68%;left:18%;"></span>
+        <span class="position-absolute rounded-circle" style="width:14px;height:14px;background:#FF922B;top:15%;right:8%;"></span>
+        <span class="position-absolute rounded-circle" style="width:16px;height:16px;background:#A855F7;top:60%;right:6%;"></span>
+        <img src="assets/project-management.png"
+             onerror="this.src='https://placehold.co/500x380/EBF5FF/4F90CF?text=Project+Management'"
+             alt="Project Management"
+             class="img-fluid rounded-4 shadow-sm" style="border:1px solid #E2E8F0;" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 3 — Work Together
+     White bg | illustration left | text right
+====================================================== -->
+<section style="background:#F8FAFF; padding:96px 0; border-top:1px solid #E2E8F0;">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6 text-center position-relative">
+        <span class="position-absolute rounded-circle" style="width:16px;height:16px;background:#51CF66;top:18%;left:5%;"></span>
+        <span class="position-absolute rounded-circle" style="width:14px;height:14px;background:#FFE482;top:45%;left:12%;"></span>
+        <span class="position-absolute rounded-circle" style="width:16px;height:16px;background:#FF6B6B;top:70%;left:7%;"></span>
+        <span class="position-absolute rounded-circle" style="width:14px;height:14px;background:#4F90CF;top:12%;right:10%;"></span>
+        <span class="position-absolute rounded-circle" style="width:16px;height:16px;background:#FF922B;top:62%;right:5%;"></span>
+        <img src="assets/work-together.png"
+             onerror="this.src='https://placehold.co/500x380/EBF5FF/4F90CF?text=Work+Together'"
+             alt="Work Together"
+             class="img-fluid rounded-4 shadow-sm" style="border:1px solid #E2E8F0;" />
+      </div>
+
+      <div class="col-lg-6 ps-lg-5">
+        <p class="fw-semibold mb-2" style="color:#4F90CF; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">Work Together</p>
+        <h2 class="fw-bold mb-4" style="font-size:2.2rem; color:#1a1a2e; line-height:1.25;">
+          Collaborate with<br>your team
+        </h2>
+        <p class="mb-4 lh-lg" style="color:#4A5568; font-size:0.95rem;">
+          With whitepace, share your perfect workspace with your team.
+          Collaborate and get your ideas across using docs, whiteboards,
+          or webpages that are as flexible as you need them to be.
+        </p>
+        <a href="#" class="btn fw-semibold px-5 py-3 rounded-3 text-white"
+           style="background:#0A2463;">Try it free</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 4 — Use an Extension
+     Dark navy bg | text left | illustration right
+====================================================== -->
+<section id="solutions" style="background:#0A2463; padding:96px 0;">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6">
+        <p class="fw-semibold mb-2" style="color:#4FC3FC; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">Use an Extension</p>
+        <h2 class="fw-bold text-white mb-4" style="font-size:2.2rem; line-height:1.25;">
+          Whitepace on any<br>device, anywhere
+        </h2>
+        <p class="mb-5 lh-lg" style="color:rgba(255,255,255,0.68); font-size:0.95rem;">
+          With whitepace, share your perfect workspace with your team.
+          Collaborate and get your ideas across using docs, whiteboards,
+          or webpages that are as flexible as you need them to be.
+        </p>
+        <a href="#" class="btn btn-warning fw-bold px-5 py-3 rounded-3 text-dark">Get Started</a>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="assets/extension.png"
+             onerror="this.src='https://placehold.co/520x380/1B2D6B/4F90CF?text=Extension+Illustration'"
+             alt="Use an Extension"
+             class="img-fluid rounded-4" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 5 — Customise it to your needs
+     White bg | illustration left | text right
+====================================================== -->
+<section style="background:#fff; padding:96px 0;">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6 text-center">
+        <img src="assets/customise.png"
+             onerror="this.src='https://placehold.co/520x380/EBF5FF/4F90CF?text=Customise+Illustration'"
+             alt="Customise to your needs"
+             class="img-fluid rounded-4 shadow-sm" style="border:1px solid #E2E8F0;" />
+      </div>
+
+      <div class="col-lg-6 ps-lg-5">
+        <p class="fw-semibold mb-2" style="color:#4F90CF; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">Customise it to your needs</p>
+        <h2 class="fw-bold mb-4" style="font-size:2.2rem; color:#1a1a2e; line-height:1.25;">
+          Your workflow,<br>your way
+        </h2>
+        <p class="mb-4 lh-lg" style="color:#4A5568; font-size:0.95rem;">
+          With whitepace, share your perfect workspace with your team.
+          Collaborate and get your ideas across using docs, whiteboards,
+          or webpages that are as flexible as you need them to be.
+        </p>
+        <a href="#" class="btn fw-semibold px-5 py-3 rounded-3 text-white"
+           style="background:#0A2463;">Get Started</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 6 — Choose Your Plan (Pricing)
+     White bg | 3 cards — middle card dark navy
+====================================================== -->
+<section id="pricing" style="background:#F8FAFF; padding:96px 0; border-top:1px solid #E2E8F0;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mb-3" style="font-size:2.2rem; color:#1a1a2e;">Choose Your Plan</h2>
+      <p class="mx-auto lh-lg" style="color:#4A5568; font-size:0.95rem; max-width:500px;">
+        Whether you want to get organized, keep your personal life on track,
+        or boost workplace productivity, Whitepace has the right plan for you.
+      </p>
+      <!-- Monthly / Yearly toggle -->
+      <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
+        <span class="fw-medium" style="color:#2D3748;">Monthly</span>
+        <div class="form-check form-switch mb-0" style="transform:scale(1.2);">
+          <input class="form-check-input" type="checkbox" id="billingToggle" role="switch"
+                 style="cursor:pointer; background-color:#0A2463; border-color:#0A2463;" />
+          <label class="form-check-label" for="billingToggle"></label>
+        </div>
+        <span class="fw-medium" style="color:#2D3748;">
+          Yearly
+          <span class="badge rounded-pill ms-1 fw-semibold"
+                style="background:#EBF5FF; color:#4F90CF; font-size:0.72rem;">Save 20%</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center align-items-stretch">
+
+      <!-- FREE -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 p-2 shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <p class="fw-semibold mb-1" style="color:#4A5568; font-size:0.85rem;">Free</p>
+            <p class="mb-3" style="color:#4A5568; font-size:0.82rem;">Organizer</p>
+            <div class="d-flex align-items-end mb-4">
+              <span class="fw-bold" style="font-size:2.8rem; color:#1a1a2e; line-height:1;"
+                    data-monthly="$0" data-yearly="$0">$0</span>
+              <span class="mb-1 ms-1" style="color:#4A5568; font-size:0.85rem;">/ month</span>
+            </div>
+            <hr style="border-color:#E2E8F0;" />
+            <ul class="list-unstyled mt-3 mb-4 flex-grow-1" style="font-size:0.88rem; color:#4A5568;">
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> 10 GB Storage
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> 10 users allowed
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> Send up to 10 GB
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3" style="opacity:0.4;">
+                <i class="bi bi-x-lg" style="font-size:0.8rem;"></i>
+                <span>Connect up to 3 apps</span>
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3" style="opacity:0.4;">
+                <i class="bi bi-x-lg" style="font-size:0.8rem;"></i>
+                <span>Advanced security</span>
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3" style="opacity:0.4;">
+                <i class="bi bi-x-lg" style="font-size:0.8rem;"></i>
+                <span>Collaboration tools</span>
+              </li>
+              <li class="d-flex align-items-center gap-2" style="opacity:0.4;">
+                <i class="bi bi-x-lg" style="font-size:0.8rem;"></i>
+                <span>24/7 Support</span>
+              </li>
+            </ul>
+            <a href="#" class="btn fw-semibold w-100 py-3 rounded-3 mt-auto"
+               style="border:2px solid #0A2463; color:#0A2463; background:transparent;">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRO — highlighted dark navy card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 p-2" style="background:#0A2463; box-shadow:0 8px 40px rgba(10,36,99,0.25);">
+          <div class="card-body p-4 d-flex flex-column">
+            <p class="fw-semibold mb-1" style="color:rgba(255,255,255,0.7); font-size:0.85rem;">Pro</p>
+            <p class="mb-3" style="color:rgba(255,255,255,0.5); font-size:0.82rem;">Freelancer</p>
+            <div class="d-flex align-items-end mb-4">
+              <span class="fw-bold text-white" style="font-size:2.8rem; line-height:1;"
+                    data-monthly="$25" data-yearly="$20">$25</span>
+              <span class="mb-1 ms-1" style="color:rgba(255,255,255,0.5); font-size:0.85rem;">/ month</span>
+            </div>
+            <hr style="border-color:rgba(255,255,255,0.12);" />
+            <ul class="list-unstyled mt-3 mb-4 flex-grow-1" style="font-size:0.88rem; color:rgba(255,255,255,0.75);">
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2 text-warning" style="font-size:1rem;"></i> 10 GB Storage
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2 text-warning" style="font-size:1rem;"></i> 10 users allowed
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2 text-warning" style="font-size:1rem;"></i> Send up to 10 GB
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2 text-warning" style="font-size:1rem;"></i> Connect up to 3 apps
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2 text-warning" style="font-size:1rem;"></i> Advanced security
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3" style="opacity:0.4;">
+                <i class="bi bi-x-lg text-white" style="font-size:0.8rem;"></i>
+                <span>Collaboration tools</span>
+              </li>
+              <li class="d-flex align-items-center gap-2" style="opacity:0.4;">
+                <i class="bi bi-x-lg text-white" style="font-size:0.8rem;"></i>
+                <span>24/7 Support</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-warning fw-bold w-100 py-3 rounded-3 mt-auto text-dark">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUSINESS -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 rounded-4 p-2 shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <p class="fw-semibold mb-1" style="color:#4A5568; font-size:0.85rem;">Business</p>
+            <p class="mb-3" style="color:#4A5568; font-size:0.82rem;">Collaboration</p>
+            <div class="d-flex align-items-end mb-4">
+              <span class="fw-bold" style="font-size:2.8rem; color:#1a1a2e; line-height:1;"
+                    data-monthly="$50" data-yearly="$40">$50</span>
+              <span class="mb-1 ms-1" style="color:#4A5568; font-size:0.85rem;">/ month</span>
+            </div>
+            <hr style="border-color:#E2E8F0;" />
+            <ul class="list-unstyled mt-3 mb-4 flex-grow-1" style="font-size:0.88rem; color:#4A5568;">
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> 10 GB Storage
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> 10 users allowed
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> Send up to 10 GB
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> Connect up to 3 apps
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> Advanced security
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> Collaboration tools
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-check2" style="color:#4F90CF; font-size:1rem;"></i> 24/7 Support
+              </li>
+            </ul>
+            <a href="#" class="btn fw-semibold w-100 py-3 rounded-3 mt-auto"
+               style="border:2px solid #0A2463; color:#0A2463; background:transparent;">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 7 — Your work, everywhere you are
+     Dark navy CTA banner
+====================================================== -->
+<section style="background:#0A2463; padding:80px 0;">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-8">
+        <h2 class="fw-bold text-white mb-3" style="font-size:2.1rem; line-height:1.25;">
+          Your work, everywhere <span class="text-warning">you are</span>
+        </h2>
+        <p style="color:rgba(255,255,255,0.68); font-size:0.95rem; line-height:1.75; max-width:520px;">
+          Access your workspace from any device — desktop, tablet, or mobile.
+          Whitepace keeps your team in sync wherever they work.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a href="#" class="btn btn-warning fw-bold px-5 py-3 rounded-3 text-dark fs-6">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 8 — 100% your data
+     White bg | text left | world map right
+====================================================== -->
+<section style="background:#fff; padding:96px 0;">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4" style="font-size:2.2rem; color:#1a1a2e; line-height:1.25;">
+          100% <em class="fst-normal" style="color:#0A2463;">your</em> data
+        </h2>
+        <p class="mb-5 lh-lg" style="color:#4A5568; font-size:0.95rem;">
+          All your data is stored securely on our servers.
+          We never sell your data to third parties.
+          You own your data — always.
+        </p>
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="d-flex align-items-start gap-3">
+              <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                   style="width:44px;height:44px;background:#EBF5FF;">
+                <i class="bi bi-shield-check fs-5" style="color:#4F90CF;"></i>
+              </div>
+              <div>
+                <p class="fw-semibold mb-1" style="color:#1a1a2e; font-size:0.9rem;">Secure Data</p>
+                <p class="mb-0" style="color:#4A5568; font-size:0.82rem;">256-bit encryption</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex align-items-start gap-3">
+              <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
+                   style="width:44px;height:44px;background:#EBF5FF;">
+                <i class="bi bi-lock-fill fs-5" style="color:#4F90CF;"></i>
+              </div>
+              <div>
+                <p class="fw-semibold mb-1" style="color:#1a1a2e; font-size:0.9rem;">Private</p>
+                <p class="mb-0" style="color:#4A5568; font-size:0.82rem;">Your data stays yours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="assets/world-map.png"
+             onerror="this.src='https://placehold.co/540x360/EBF5FF/4F90CF?text=World+Map'"
+             alt="100% your data"
+             class="img-fluid rounded-4" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 9 — Our Sponsors
+     White bg | Apple, Microsoft, Slack, Google logos
+====================================================== -->
+<section style="background:#F8FAFF; padding:60px 0; border-top:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0;">
+  <div class="container">
+    <p class="text-center fw-semibold mb-5"
+       style="color:#4A5568; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">
+      Our sponsors
+    </p>
+    <div class="row align-items-center justify-content-center gy-4 gx-5">
+      <div class="col-auto">
+        <div class="d-flex align-items-center gap-2">
+          <i class="bi bi-apple fs-2" style="color:#1a1a2e;"></i>
+          <span class="fw-bold fs-4" style="color:#1a1a2e;">Apple</span>
+        </div>
+      </div>
+      <div class="col-auto">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/140px-Microsoft_logo.svg.png"
+             alt="Microsoft" style="height:28px; width:auto; opacity:0.8;" />
+      </div>
+      <div class="col-auto">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Slack_Technologies_Inc._current_logo.svg/140px-Slack_Technologies_Inc._current_logo.svg.png"
+             alt="Slack" style="height:28px; width:auto; opacity:0.8;" />
+      </div>
+      <div class="col-auto">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/140px-Google_2015_logo.svg.png"
+             alt="Google" style="height:28px; width:auto; opacity:0.8;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 10 — Work with Your Favourite Apps
+     Dark navy bg | text left | circular app icons right
+====================================================== -->
+<section id="resources" style="background:#0A2463; padding:96px 0;">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-6">
+        <h2 class="fw-bold text-white mb-4" style="font-size:2.2rem; line-height:1.25;">
+          Work with Your Favourite Apps Using whitepace
+        </h2>
+        <p class="mb-5 lh-lg" style="color:rgba(255,255,255,0.68); font-size:0.95rem;">
+          Connect the tools your team already uses. Whitepace integrates
+          with 100+ apps so your workflow never skips a beat.
+        </p>
+        <a href="#" class="btn btn-warning fw-bold px-5 py-3 rounded-3 text-dark">Get Started</a>
+      </div>
+
+      <div class="col-lg-6">
+        <!-- Circular app icon grid — matches Figma layout -->
+        <div class="d-flex flex-column align-items-center gap-3">
+          <!-- Row 1 -->
+          <div class="d-flex gap-3 justify-content-center">
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#E8F0FE;">
+              <i class="bi bi-google fs-4" style="color:#4285F4;"></i>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#4A154B;">
+              <i class="bi bi-slack fs-4 text-white"></i>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#FDECEA;">
+              <i class="bi bi-envelope-fill fs-4" style="color:#EA4335;"></i>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="d-flex gap-3 justify-content-center">
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#E3F9EE;">
+              <i class="bi bi-camera-video-fill fs-4" style="color:#2D8CFF;"></i>
+            </div>
+            <!-- Centre whitepace logo -->
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:72px;height:72px;background:#fff;">
+              <svg width="36" height="36" viewBox="0 0 34 34" fill="none">
+                <rect width="34" height="34" rx="8" fill="#4F90CF"/>
+                <path d="M8 12L13 22L17 15L21 22L26 12" stroke="white" stroke-width="2.6"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#E8F0FE;">
+              <i class="bi bi-dropbox fs-4" style="color:#0061FF;"></i>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="d-flex gap-3 justify-content-center">
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#FFF3E0;">
+              <i class="bi bi-calendar2-check-fill fs-4" style="color:#FF922B;"></i>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#E3F9EE;">
+              <i class="bi bi-chat-dots-fill fs-4" style="color:#00BFA5;"></i>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#1a1a2e;">
+              <i class="bi bi-apple fs-4 text-white"></i>
+            </div>
+          </div>
+          <!-- Row 4 -->
+          <div class="d-flex gap-3 justify-content-center">
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#E8F0FE;">
+              <i class="bi bi-windows fs-4" style="color:#0078D4;"></i>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#E8F9EE;">
+              <i class="bi bi-android2 fs-4" style="color:#3DDC84;"></i>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center shadow"
+                 style="width:60px;height:60px;background:#E8F0FE;">
+              <i class="bi bi-twitter-x fs-4" style="color:#1DA1F2;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 11 — What Our Clients Says
+     White bg | 3 testimonial cards
+====================================================== -->
+<section style="background:#fff; padding:96px 0;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mb-3" style="font-size:2.2rem; color:#1a1a2e;">
+        See what our trusted users Say
+      </h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card 1 — dark navy highlighted -->
+      <div class="col-lg-4 col-md-6">
+        <div class="rounded-4 p-4 h-100 d-flex flex-column" style="background:#0A2463;">
+          <div class="d-flex gap-1 mb-3">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+          <p class="lh-lg mb-4 flex-grow-1" style="color:rgba(255,255,255,0.82); font-size:0.9rem;">
+            "Whitepace has been a game changer for our entire team. We can now
+            collaborate and communicate better than ever before."
+          </p>
+          <div class="d-flex align-items-center gap-3 mt-auto">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold flex-shrink-0"
+                 style="width:44px;height:44px;background:#FFE482;color:#0A2463;font-size:0.85rem;">JD</div>
+            <div>
+              <p class="text-white fw-semibold mb-0" style="font-size:0.88rem;">John Doe</p>
+              <p class="mb-0" style="color:rgba(255,255,255,0.55);font-size:0.78rem;">CEO, Acme Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — white with border -->
+      <div class="col-lg-4 col-md-6">
+        <div class="rounded-4 p-4 h-100 d-flex flex-column shadow-sm" style="border:1px solid #E2E8F0;">
+          <div class="d-flex gap-1 mb-3">
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+          </div>
+          <p class="lh-lg mb-4 flex-grow-1" style="color:#4A5568; font-size:0.9rem;">
+            "The platform is intuitive and easy to use. Our onboarding time dropped
+            from days to hours after switching to Whitepace."
+          </p>
+          <div class="d-flex align-items-center gap-3 mt-auto">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold flex-shrink-0"
+                 style="width:44px;height:44px;background:#4F90CF;color:#fff;font-size:0.85rem;">SM</div>
+            <div>
+              <p class="fw-semibold mb-0" style="color:#1a1a2e;font-size:0.88rem;">Sarah Miller</p>
+              <p class="mb-0" style="color:#4A5568;font-size:0.78rem;">Product Lead, TechCorp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — white with border -->
+      <div class="col-lg-4 col-md-6">
+        <div class="rounded-4 p-4 h-100 d-flex flex-column shadow-sm" style="border:1px solid #E2E8F0;">
+          <div class="d-flex gap-1 mb-3">
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-fill" style="color:#4F90CF;"></i>
+            <i class="bi bi-star-half" style="color:#4F90CF;"></i>
+          </div>
+          <p class="lh-lg mb-4 flex-grow-1" style="color:#4A5568; font-size:0.9rem;">
+            "We've tried many project tools but none come close. Whitepace keeps
+            everything in one place and the team actually uses it every day."
+          </p>
+          <div class="d-flex align-items-center gap-3 mt-auto">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold flex-shrink-0"
+                 style="width:44px;height:44px;background:#0A2463;color:#fff;font-size:0.85rem;">RK</div>
+            <div>
+              <p class="fw-semibold mb-0" style="color:#1a1a2e;font-size:0.88rem;">Rahul Khan</p>
+              <p class="mb-0" style="color:#4A5568;font-size:0.78rem;">CTO, BuildFast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     SECTION 12 — Try Whitepace Today
+     Dark navy CTA with app store buttons
+====================================================== -->
+<section style="background:#0A2463; padding:96px 0; text-align:center;">
+  <div class="container">
+    <h2 class="fw-bold text-white mb-4" style="font-size:2.4rem;">
+      Try Whitepace today
+    </h2>
+    <p class="mx-auto mb-5 lh-lg" style="color:rgba(255,255,255,0.68);font-size:0.95rem;max-width:480px;">
+      Get started for free. No credit card needed. Cancel anytime.
+    </p>
+    <a href="#" class="btn btn-warning fw-bold px-5 py-3 rounded-3 text-dark fs-6 mb-5">
+      Get Whitepace free
+    </a>
+    <!-- Store badges row -->
+    <div class="d-flex align-items-center justify-content-center gap-3 flex-wrap mt-2">
+      <a href="#" class="d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-decoration-none"
+         style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);">
+        <i class="bi bi-apple fs-4 text-white"></i>
+        <div class="text-start">
+          <span class="d-block text-white lh-1" style="font-size:0.62rem;opacity:0.7;">Download on the</span>
+          <span class="d-block text-white fw-semibold" style="font-size:0.82rem;">App Store</span>
+        </div>
+      </a>
+      <a href="#" class="d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-decoration-none"
+         style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);">
+        <i class="bi bi-google-play fs-4 text-white"></i>
+        <div class="text-start">
+          <span class="d-block text-white lh-1" style="font-size:0.62rem;opacity:0.7;">Get it on</span>
+          <span class="d-block text-white fw-semibold" style="font-size:0.82rem;">Google Play</span>
+        </div>
+      </a>
+      <a href="#" class="d-flex align-items-center gap-2 rounded-3 px-3 py-2 text-decoration-none"
+         style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);">
+        <i class="bi bi-windows fs-4 text-white"></i>
+        <div class="text-start">
+          <span class="d-block text-white lh-1" style="font-size:0.62rem;opacity:0.7;">Available on</span>
+          <span class="d-block text-white fw-semibold" style="font-size:0.82rem;">Windows</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     FOOTER — Dark navy, 5-column layout
+====================================================== -->
+<footer style="background:#07111F; padding:80px 0 0;">
+  <div class="container">
+    <div class="row gy-5 mb-5">
+
+      <!-- Brand column -->
+      <div class="col-lg-4 col-md-12">
+        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none mb-4">
+          <svg width="32" height="32" viewBox="0 0 34 34" fill="none">
+            <rect width="34" height="34" rx="8" fill="#4F90CF"/>
+            <path d="M8 12L13 22L17 15L21 22L26 12" stroke="white" stroke-width="2.6"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="text-white fw-bold fs-5">whitepace</span>
+        </a>
+        <p class="lh-lg mb-4" style="color:rgba(255,255,255,0.55); font-size:0.88rem; max-width:280px;">
+          Whitepace was created for the new ways we live and work.
+          We make it easy to plan, organize, and grow together.
+        </p>
+        <div class="d-flex gap-2">
+          <a href="#" class="rounded-3 d-flex align-items-center justify-content-center text-decoration-none"
+             style="width:36px;height:36px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);"
+             aria-label="Twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="#" class="rounded-3 d-flex align-items-center justify-content-center text-decoration-none"
+             style="width:36px;height:36px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);"
+             aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" class="rounded-3 d-flex align-items-center justify-content-center text-decoration-none"
+             style="width:36px;height:36px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);"
+             aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="rounded-3 d-flex align-items-center justify-content-center text-decoration-none"
+             style="width:36px;height:36px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);"
+             aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Whitepace links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="fw-semibold mb-4" style="color:#fff; font-size:0.82rem; text-transform:uppercase; letter-spacing:1px;">Whitepace</h6>
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Features</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Pricing</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Case Studies</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Reviews</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Updates</a></li>
+        </ul>
+      </div>
+
+      <!-- Company links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="fw-semibold mb-4" style="color:#fff; font-size:0.82rem; text-transform:uppercase; letter-spacing:1px;">Company</h6>
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">About</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Contact us</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Careers</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Culture</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Support links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="fw-semibold mb-4" style="color:#fff; font-size:0.82rem; text-transform:uppercase; letter-spacing:1px;">Support</h6>
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Getting Started</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Helper Center</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Server Status</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Report a Bug</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Chat Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="fw-semibold mb-4" style="color:#fff; font-size:0.82rem; text-transform:uppercase; letter-spacing:1px;">Follow us</h6>
+        <ul class="list-unstyled d-flex flex-column gap-3">
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Facebook</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Twitter</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Instagram</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">LinkedIn</a></li>
+          <li><a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.55);font-size:0.88rem;">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- Footer bottom bar -->
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 py-4"
+         style="border-top:1px solid rgba(255,255,255,0.08);">
+      <p class="mb-0" style="color:rgba(255,255,255,0.4); font-size:0.82rem;">
+        Copyright &copy; 2022 Whitepace LLC.
+      </p>
+      <div class="d-flex gap-4">
+        <a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.4);font-size:0.82rem;">Privacy Policy</a>
+        <a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.4);font-size:0.82rem;">Terms of Service</a>
+        <a href="#" class="text-decoration-none" style="color:rgba(255,255,255,0.4);font-size:0.82rem;">Cookies Settings</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
